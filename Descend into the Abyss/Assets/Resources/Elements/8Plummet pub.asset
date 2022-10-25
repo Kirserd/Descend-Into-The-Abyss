@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Plummet pub
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: Plummet pub
+  Icon: {fileID: 0}
+  Description: "The\_Plummet Pub\_is a\_Delver\_tavern and spot for information exchange
+    that is run by a retired Delver.  The establishment was given it's oddly inauspicious
+    name out of the idea that, \"By coming to an unlucky place, you will have better
+    luck on your next delve.\u201D  It's slogan is, \"Serving the last meals Delvers
+    want to eat before they die\", with the former cooks of Delver groups, and would-be
+    trainees, running the kitchen and showing their skills. The wait staff also consists
+    out of Blue Whistle Delvers, who can't make a living on delving alone.  Its status
+    as information exchange is more fluid. While the gossip exchanged in the shop
+    is supposed to be \"for your ears only\", it makes the rounds in the local Delver
+    population.  Tourists interested in local gourmet food who visit the area report:
+    \"What Delvers really come for a bite of is romanticism and an adventurous mood.\" 
+    Tourists are seated in a better part of the pub away from Delvers. For those
+    who want a taste of the Delver lifestyle, there is no other way than to become
+    a Delver.  "
+  AdditionalInfo: 

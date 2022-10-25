@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 2The Forest of Temptation
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: "The Forest of Temptation\_(2nd Layer)"
+  Icon: {fileID: 21300000, guid: c282ec58e7412ad46ba4bcaa7950b7c0, type: 3}
+  Description: "it is the 2nd\_layer of the\_Abyss. It is a large forest with surprisingly
+    diverse environments, and it is here where one truly gains an understanding of
+    the horrors of the Abyss.                                                     
+    Here, the curse takes the form of intense nausea, headache, and numbness of limbs."
+  AdditionalInfo: "The Forest of Temptation is the first truly dangerous section
+    of the Abyss. The fauna and environment suddenly change, turning into a tropical
+    rainforest with huge vegetation. It is filled with dangerous beasts and ascending
+    becomes increasingly difficult, making it a place where only experienced explorers
+    can delve to. If a\_Red Whistle Delver\_somehow gets to the 2nd\_layer, search
+    parties are called off and it is treated as a suicide.  Throughout the top half
+    of the layer, there is a forest of massive plants resembling lilypads. These
+    plants provide good cover from potential threats; however, they also obscure
+    view of the landscape, resulting in Delvers having difficult times telling where
+    they are. Luckily, their leaves always point toward the center of the Abyss.
+    So with that in mind, and the fact that\_Amagiri\_grows on their stems, lost
+    Delvers can find their way relatively easily.  There is an unknown virus in this
+    layer which causes Tachikiri fever. Delvers ranked Blue Whistle and above take
+    a vaccine to protect themselves from said virus. Deeper in this layer, there
+    is an area known as the \"Inverted Forest\". This is an area where updrafts and
+    wind currents coming from the Abyss are so strong that the environment effectively
+    flips, creating a forest of upside-down platforms that Delvers have to jump across\u2014even
+    water flows upwards. The Force Field of the Abyss, the cause of the Strain of
+    Ascension, is weaker here compared to the other areas of the 2nd\_layer. Thus
+    the environment here is also darker and colder. Because of the weakened Force
+    Field, an\_observation camp was built from a particularly large tree in the Inverted
+    Forest, the Great Tree of Porta, to serve as a resting point for Delvers. The
+    camp is now called\_Seeker Camp, and is run by the legendary White Whistle Delver\_Ozen\_and
+    her team of Delvers, the\_Subterranean Bandits. "

@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 5The Sea of Corpses
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: "The Sea of Corpses\_(5th Layer)"
+  Icon: {fileID: 21300000, guid: c3b6771615da8b844b2989022e58fe32, type: 3}
+  Description: "It is a vast frozen wasteland on top of a massive sea. It also is
+    the last layer where it is physically possible for\_Delvers\_to return to the
+    surface without losing their humanity or dying.                                                        
+    Here, the curse takes the form of extreme sensory deprivation, first draining
+    one of their basic senses to the point of\_Riko\_not noticing falling down a
+    flight of stairs. The curse then quickly escalates into losing one's very sense
+    of self (medically, it is called\_proprioception). This kind of deprivation also
+    makes unintentional self-harm extremely likely, like when Riko clenched her jaw
+    so hard that she broke her own teeth, not realizing the harm done until she put
+    her finger in her mouth and saw blood.  "
+  AdditionalInfo: "The 5th\_layer is the world that only White Whistle or Black Whistle
+    Delvers delve into, and according to\_Shiggy, one can count the number of people
+    who successfully returned alive with the fingers of one's hands. It is the thinnest
+    vertical layer of the Abyss, being only 1,000 meters deep, but it is also the
+    widest one horizontally, probably around ten times wider than the town of\_Orth.
+    It consists mostly of a large sea with some crystallized sections held up by
+    a large layer of thick mud and bones, hence the name \"The Sea of Corpses.\"\_The
+    water is filled with monsters of the sea, and diving deep into the water is synonymous
+    with suicide. Not only are there dangerous creatures, but swimming back up would
+    make someone succumb to the curse quite easily. Since it is the last section
+    of the Abyss where it is physically possible to survive a return trip, it is
+    quite common for White Whistle Delvers to settle down here for some time. At
+    the deepest point above the water, a Forward Operating Base named\_Ido Front\_was
+    established by the White Whistle\_Bondrewd.Ido Front was originally the ruins
+    of a former ritual site where preperations were made and the ritual was held.
+    Ido Front gets its electricity from the rotation of the unstoppable whirlpool
+    it is built upon. A device akin to an elevator exists in its center, the\_Altar
+    of the Absolute Boundary, that is used to transport people through the sea and
+    into the\_6th\_layer. However, it can only be activated by a White Whistle, or
+    more specifically, by a\_Life Reverberating Stone. Since Life Reverberating Stones
+    are specially designed to be exclusively used by their original owners, the elevator
+    is only available to those who have a White Whistle of their own. "

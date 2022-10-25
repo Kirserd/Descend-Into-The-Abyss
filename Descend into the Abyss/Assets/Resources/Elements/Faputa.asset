@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: Faputa
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: Faputa
+  Icon: {fileID: 21300000, guid: 13b4650c7e9702047aa5acd87a0712ca, type: 3}
+  Description: 'Faputa is the last child born from Irumyuui and is referred to as
+    "Princess of the Narehate" by the inhabitants of the Narehate Village Ilblu within
+    the inviolable 6th layer of the Abyss.   She is described by Majikaja as "the
+    embodiment of value", and is incredibly highly regarded by all the Narehate in
+    the village.While the citizens of the village are unable to leave it, Faputa
+    is actually the opposite, being unable to enter, due to being imbued with the
+    Cradles of Desire Irumyuui used to hold. She can speak both the language of Ilblu
+    and the language of the Delvers.    '
+  AdditionalInfo: Faputa's face, upper arms, and upper torso are dark in color. Her
+    hair is long and feathery. Fluffy white fur covers her rabbit-like ears, forearms,
+    legs, and lower body, starting at her hips. One of Faputa's most noticeable traits
+    is her four arms. On each of her hands are 3 large red claws, which act as fingers,
+    with the forth and fifth folded away.[6][7] Futhermore her folded away fingers
+    have hidden delicate talons with sensing organs that function similar to the
+    sense of smell. Red claw like protrusions are also on her hair, her knees, and
+    the ends of her feet, similar to hooves.

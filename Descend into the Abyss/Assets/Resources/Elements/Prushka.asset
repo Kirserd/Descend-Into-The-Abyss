@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: Prushka
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: Prushka
+  Icon: {fileID: 21300000, guid: 04f6cc8fc35a9e94198408ee90ef314f, type: 3}
+  Description: Prushka is the adoptive daughter of the White Whistle Delver Bondrewd.
+    She was born in the Abyss and, as such, has never been to the surface.                                                                                           
+    ''My name, Prushka, means the flower of dawn. Papa gave it to me. Hey, Riko.
+    Have you ever seen a dawn?''
+  AdditionalInfo: Prushka is a young girl with short white and green curly hair and
+    glowing red eyes. Her attire appears to be somewhat influenced by the clothing
+    of diving suits. She wears a green coat and gloves on top of a white shirt, as
+    well as a big hat on her head she almost never removes.

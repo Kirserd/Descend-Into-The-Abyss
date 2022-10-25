@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: Meinya
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: Meinya
+  Icon: {fileID: 21300000, guid: c20f512ac12c6c247bbbc51107537565, type: 3}
+  Description: 'Meinya is Prushka''s pet given to her as a present from her adoptive
+    father, Bondrewd, as a tenth birthday present. Its name is a result of Prushka
+    not being able to pronounce "Meinastilim" when it was given to her.It later joins
+    Reg, Riko, and Nanachi on their adventure to the bottom of the Abyss. '
+  AdditionalInfo: Meinya is a rabbit-sized creature called a Meinastilim, also known
+    as a child of change. It has an oval shaped body, stubby legs and feet, and large
+    ears it uses to fly with. Its face is somewhat resemblant of a toad's as its
+    pupils are slitted horizontally across the entire diameter of the eye.  By sniffing
+    Meinya's fur, Riko and Prushka are able to navigate Ido Front without succumbing
+    to the Curse.

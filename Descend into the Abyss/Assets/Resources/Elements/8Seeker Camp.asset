@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Seeker Camp
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'Seeker Camp '
+  Icon: {fileID: 0}
+  Description: "The\_Seeker Camp\_is an observation camp lying at 2,540m deep in
+    the Inverted Forest.  It is located far from the center of the\_Abyss\_because
+    the Curse of the Abyss is weakened here, giving\_Delvers\_a place to rest and
+    prepare for the descent into the\_3rd\_layer.  It was built from a particularly
+    large tree in the Inverted Forest, called the Great Tree of Porta.  The tree
+    being larger than other trees in the area, despite the environment being darker
+    and colder, is theorized by the inhabitants of the Seeker Camp to have the roots
+    of it reaching the nutritious sediment level of the Sea of Beoluska, causing
+    the tree to receive more water and nutrition than the other trees.  It is currently
+    a base for the White Whistle Delver\_Ozen\_and her team of Delvers, the\_Subterranean
+    Bandits.  "
+  AdditionalInfo: 

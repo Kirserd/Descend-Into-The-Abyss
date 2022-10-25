@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 7zThe village of Ilblu
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'The village of Ilblu '
+  Icon: {fileID: 0}
+  Description: "Ilblu, or\_Iruburu,\_is a village in the\_6th\_layer\_inhabited entirely
+    by\_Narehate, created by the\_three Sages. The force field does not exist in
+    the village, and by extension, neither does the curse.  Narehate in Ilblu take
+    the form of what it is they most desire, and are granted the village's protection.
+    In exchange, they are bound to the village, and a force field prevents them from
+    leaving.  The village itself seems to be somewhat sophisticated. It has\_restaurants,
+    inns, and a system of currency.  The main industry in the village is trading
+    based on the concept of \"value.\" The inhabitants are constantly trading and
+    bartering for things of equal or higher value.\_An item's value seems to be self
+    determined by whoever is in possession of the item, as well as by the village
+    itself based on the importance the item has to its owner.\_It is such an important
+    concept, that when a customer damages an item before it is paid for, an event
+    called \"The Balancing\" occurs. A noise rings out across the village, and one
+    of the perpetrator's possessions of equal value is destroyed. The perpetrator
+    may even be maimed in order to compensate for the defacement, if the value of
+    the damaged item is high enough.  Humans are of especially high value, especially
+    human children.  Furthermore, inhabitants of the village are able to use the
+    Balancing, or a concept attributed to it, to seemingly use it as an omnipotent
+    tool of creation, or recreation, as long as the user has a concise image of what
+    they desire and can compensate for it. However, it isn't specifed if the value
+    compensation is based on the creators perception of the thing to create or by
+    the understanding of the village of it.  It also is unknown if it is possible
+    to use \"lower value\", which manifests as currency of the village, to compensate
+    in this instance or if it requires the use of the one's body as the only instances
+    of usage had the respective inhabitants compensate with their bodies.   Since
+    the Narehate of Ilblu cannot leave, the only way they can hunt is to lure prey
+    into the city. "
+  AdditionalInfo: "The village was created by members of\_Ganja, who originally set
+    out to find ,what natives called, \"Shourou's Golden City\" on the 6th\_layer
+    of the\_Abyss.\_After learning from\_Interference Units\_they met that they wouldn't
+    be able to return to the surface, Ganja set up a permanent camp on the 6th\_layer. 
+    After some time, many Ganja members got ill and\_Belaf\_found out that the cause
+    of the sickness was the water they had been drinking, due to it being infected
+    by some\_unknown creature\_of the Abyss.\_During the time of the illness spreading,
+    an\_Artifact\_was discovered, by members of Ganja who hadn't fallen ill, that
+    granted the deepest wish of a person while holding if their mind wasn't too \"complex\";\_Cradle
+    of Desire.  Vueko\_requested it to be given to\_Irumyuui, a native girl who had
+    accompanied them as guide, in hope to save her from the illness.\_Wazukyan, the
+    leader of Ganja, agreed and the Artifact was given to Irumyuui.\_The Cradle of
+    Desire caused Irumyuui to transform and gave her the ability to birth\_creatures\_without
+    organs for ingestion, dying shortly after birth.\_Ganja resorted to use them
+    as source of sustenance, as they lacked other viable options.\_At some point
+    in time, a second Cradle of Desire was given to Irumyuui by Wazukyan.  Over time,
+    Irumyuui transformed more and more until she reached her final stage with the
+    ability to transform humans into Narehate.\_In this form, she had already lost
+    her consciousness and became the base of the village.\_Due to Vueko not agreeing
+    with this, she tried to take her own life and was imprisoned in the part of the
+    village that used to be Irumyuui's head, in order to keep her from harming herself. 
+    Some time later,\_Faputa\_was born, due to the wish Irumyuui had made with the
+    second Cradle of Desire, and unlike the Narehate transformed by the village who
+    can't leave it, Faputa can't enter it.  After\_Reg\_had brought back body parts
+    of Faputa into the village to trade them for\_Nanachi, it reacts to them and\_Juroimoh\_starts
+    to attack to claim the parts.\_In the battle with Juroimoh, Reg shoots his incinerator
+    creating an opening in the village causing damage to its protective boundary
+    and it starts to disperse.\_This leads to a confrontation between Faputa, the
+    villagers and Reg, which is ultimately interrupted by creatures of the 6th\_layer
+    swarming into the village and beginning to wreak havoc.  The village started
+    to crumble and fade away completely after Faputa used her control over it to
+    start a process of taking in its remaining value and it ultimately vanished completely
+    leaving only rubble from its collapse behind.   \"Iruburu\" (Ilblu) means: \u2981\t\"village\"
+    50% of the time \u2981\t\"cradle\" 40% of the time \u2981\t\"mother\" 10% of
+    the time \"Jakopufu\" means: \u2981\t\"to request\" 40% of the time \u2981\t\"special\"
+    30% of the time \u2981\t\"stimulus\" 30% of the time Phrases the\_restaurant
+    worker\_taught Riko: \u2981\t\"Konbosu\" (Understood)  \u2981\t\"Kefukeferi?\"
+    (What is its rough value?) \u2981\t\"Maen\" (A generous affirmation) \u2981\t\"Ngamu\"
+    (A generous negation) \u2981\t\"Mimiu\" (Excuse me a moment) \u2981\t\"Ienme\"
+    (Thank you) (80%) \u2981\t\"Riezoochi\" (Sorry) \u2981\t\"Famo\" (See you later)
+    \u2981\t\"Sansaika\" (I want to go) \u2981\t\"Rahossu\" (I want you to do this
+    for me/ Please) \u2981\t\"Shukaeigiitsu gosshusosu\" (You will go bankrupt if
+    you buy me) \u2981\t\"Kobuchakkyuu jinshiitsufaffu\" (Do you know of a robot
+    and a fluffy one?) \u2981\t\"Rahochusosu jinshiitsufaffu\" (I'm looking for a
+    robot and a fluffy one) Other phrases: \u2981\t\"Hadimae\" (Whoops/ Ah/ Exclamation
+    Point) \u2981\t\"Ngangamadeimo\" (I don't understand) \u2981\t\"Menme\" (Come
+    in) \u2981\t\"Fasshenburee\" (Let's do this, everyone) \u2981\t\"Indemaen\" (Of
+    course) \u2981\t\"Rahoossu\" (Do it now, please) \u2981\t\"Sazonfattsu\" (Metal
+    Wire Squad/Wire Team) \u2981\t\"Wiigorii\" (Hold it down) \u2981\t\"Mepopohon\"
+    (Sleepyhead) \u2981\t\"Haniisuku\" (Inn) \u2981\t\"Shazara faberasozu debei\"
+    (The scent of your blood is attracting beasts) \u2981\t\"Jimuntsu modikopoh\"
+    (What are they talking about) \u2981\t\"Madimo\" (I don't know) \u2981\t\"Adimono
+    jimuntsepo\" (They are talking in the newcomers' tounge) \u2981\t\"Modipoh\"
+    (What is that noise) \u2981\t\"Rie\" (My bad) \u2981\t\"Abuee\" (She is inside)
+    \u2981\t\"Imigootsue\" (She is still inside) \u2981\t\"Bigoou\" (Now) \u2981\t\"Zoi
+    baajyu\" (She stopped moving) \u2981\t\"Menbuesu\" (Go) \u2981\t\"Menbuee\" (Move)
+    \u2981\t\"Jyazuraru Mugumodi\" (What beast is that) \u2981\t\"Mijumo\" (No idea)
+    \u2981\t\"Baajazusu Jizumoo\" (Even the auctioneer hasn't seen it) \u2981\t\"Konboissu\"
+    (Sure) \u2981\t\"ENnu sosu\" Brought them out this way, have you?) \u2981\t\"ENnu
+    HONdINDEbuu sosu\" (So you really brought \"their\" child out this way) \u2981\t\"FURUFU
+    de fabera\" (Damned Narehate) \u2981\t\"Mandappu! Famosu!\" (Thanks for the meal!
+    Until next time!) "

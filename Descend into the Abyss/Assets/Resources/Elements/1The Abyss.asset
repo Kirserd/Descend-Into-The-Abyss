@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 1The Abyss
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'The Abyss '
+  Icon: {fileID: 0}
+  Description: "The Abyss\_is a colossal pit discovered 1,900 years ago around the
+    islands of the southern ocean of Beolusk. The vertical hole has a diameter of
+    around 1,000 meters and is at least 20,000 meters deep, with its exact depth
+    being currently unknown.\_It possesses a unique ecosystem, wherein lie the remnants
+    of an ancient, yet advanced, civilization. Many have challenged the mysterious
+    Abyss, pursuing countless hidden treasures and relics of immense value. Some
+    are treasure hunters looking for\_Artifacts, while others are explorers determined
+    to unveil the secrets the Abyss hides.\_To explore the Abyss, valiant cave raiders
+    called\_Delvers\_emerged, and the town of\_Orth\_was established at the edge
+    of the Abyss.  The Abyss still contains many sections that have never been seen,
+    and carries many dangers. Hazardous habitats that defy common sense and otherworldly\_creatures\_adapted
+    to the unique environment are major obstacles to explorers.  All over the Abyss,
+    there is a mysterious force field which\_Nanachi\_refers to as the \"very blood
+    of the Abyss, so to speak\". The force field acts as its main source of energy,
+    sustaining life by carrying sunlight and nutrients down into the depths where
+    it would otherwise be impossible for light to reach. While it is present everywhere,
+    it seems to be more prominent the closer one gets to the center of the vertical
+    shaft.\_More savage and dangerous creatures are often found in areas where the
+    force field is most prevalent, and the branches of vegetation always point towards
+    the center of the hole, their main source of energy for undergoing photosynthesis.\_Delvers
+    use this fact to guide themselves when they are lost. The force field itself
+    is invisible to the naked eye, but it can be detected as a vague fog that limits
+    the vision of humans.\_The field is also constantly moving, following the movements
+    of living beings to the point of breathing being enough to change its flow, and
+    altering its flow as it responds to their consciousness. There are a few specific
+    spots in the Abyss, usually far away from the center and in secluded areas, where
+    the force field doesn't exist or is extremely weak.  The great pit also appears
+    to have some form of time distortion. This is evident by\_Ganja\_having arrived
+    at the Abyss at a point in time before the first Delvers and a native tribe still
+    existed, yet, according to\_Wazukyan, only 150 years have passed since the creation
+    of the\_Village of Ilblu\_in the\_6th\_Layer.\_The\_White Whistle Delver\_Ozen\_claims
+    that the deeper one delves, the more one's sense of time breaks, with the effect
+    becoming extreme from the\_5th\_layer\_onwards. As an example, she noted people
+    might intend to stay on the 5th\_layer just a few weeks, but by the time they
+    return to the surface, several months had passed. As such, Ozen considers it
+    a possibility a decade on the surface may be akin to a few years on the bottom
+    of the Abyss. "
+  AdditionalInfo: "Though the Abyss is riddled with countless dangers and hazards,
+    one of the greatest challenges facing Delvers is, in fact, the ascent from it.
+    This is due to a phenomenon called the\_Curse of the Abyss. The term refers to
+    a series of symptoms that manifest upon ascending while inside the Abyss, with
+    its more scientific name being the\_\"Strains of Ascension\". The effects of
+    the Curse manifest after ascending around 10 meters within the Abyss, and there
+    is no way to avoid it through conventional means.\_The Curse affects all living
+    things; however, the creatures that inhabit the Abyss have developed ways to
+    sense its flow and avoid it. The deeper one delves, the more severe the symptoms
+    are, starting at mild dizziness and nausea and gradually rising to intense pain
+    throughout the body, loss of senses and even death. This makes the return trip
+    from the Abyss extremely difficult, and it is not uncommon for Delvers to perish
+    on the way up. Particularly, the curse of the 6th\_layer (\"loss of humanity
+    or death\") makes the return journey physically impossible for humans. The Curse
+    results from piercing the force field of the Abyss while ascending, although
+    this fact is not generally known. With Layer piled upon Layer, the force field
+    blankets living beings similar to cloth warping around them. Its flow is similar
+    to inverted thorns, allowing one to pass through in descent, but being harmful
+    when trying to ascend.  Areas where the force field is weaker also result in
+    the effects of the curse being less severe. In certain specific places, like\_Nanachi's
+    hideout\_and\_the Village of Ilblu, the force field isn't present at all, and
+    so the Curse doesn't occur either.  "

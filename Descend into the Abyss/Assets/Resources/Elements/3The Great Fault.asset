@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 3The Great Fault
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: The Great Fault (3rd Layer)
+  Icon: {fileID: 21300000, guid: 26f081bb00e7f41478d191d867c1f13d, type: 3}
+  Description: "is the 3rd\_layer of the\_Abyss, being a narrow, 4 kilometer gorge
+    surrounded by countless interlocking caverns with many creatures, both harmless
+    and deadly, lurking inside.                                                                  
+    Here, the curse takes the form of severe vertigo and nausea combined with visual
+    and auditory hallucinations."
+  AdditionalInfo: "The 3rd\_layer is a 4000m vertical drop down a circular shaft.
+    The only viable way of traversing it is through a network of caverns, dens, and
+    holes. These were likely made both naturally and by\_Delvers, ancient humans,
+    and the\_Neritantans\_that live in them.\_The vertical drop is significantly
+    smaller in diameter than the other levels of the Abyss, as evidenced by the\_Abyss
+    Map.  This layer is home to large aerial predators, such as\_Madokajacks.\_Crimson
+    Splitjaws\_have also been known to use their brute strength to infiltrate the
+    side caves in order to capture their prey.\_Amakagame\_are also located in the
+    cave systems and can pose a threat to Delvers.\_However, their main source of
+    sustenance are Neritantans and they do not actively hunt humans. While the inner
+    caverns mainly house non-aggressive creatures, occasionally Madokajacks will
+    nest in the larger caves.  Once at the 6750m mark, the central shaft has many
+    spiky eggs stuck along its walls.\_The eggs hatch into\_Kazura Squid\_that swim
+    in the tallest goblets in the fourth level.  An ancient 'pirate ship' was seen
+    partially exposed in the side of the Great Fault.  "

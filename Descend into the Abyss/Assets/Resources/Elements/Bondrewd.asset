@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: Bondrewd
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: Bondrewd
+  Icon: {fileID: 21300000, guid: 1247d03e24a626a489f4df76ecb8abfd, type: 3}
+  Description: 'Bondrewd "The Novel", also known as "The Lord of Dawn", "The Sovereign
+    of Dawn", is a legendary White Whistle Delver who has made many great discoveries
+    about the secrets of the Abyss. A researcher fascinated by the Abyss, he has
+    often resorted to illegal and morally questionable means in order to get funds
+    and to conduct his research, including selling Artifacts and information from
+    the depths illicitly, developing dangerous drugs, and even experimenting on living
+    humans. His methods went against all the ethical principles of Delvers, but he
+    was allowed to continue due to his outstanding results.                                                                    
+    Ten years ago, he did the unthinkable by establishing a large base named the
+    Ido Front in the deepest area within the 5th layer of the Abyss, as well as securing
+    a route to the then-inviolable 6th layer. '
+  AdditionalInfo: Bondrewd is a tall man sporting mostly black clothing, with a long
+    coat and a suit. He always covers his face with a black helmet which includes
+    a gap in the middle where violet light shines through. His second body also has
+    a lizard-like tail, which originates from the Artifact Third Works.

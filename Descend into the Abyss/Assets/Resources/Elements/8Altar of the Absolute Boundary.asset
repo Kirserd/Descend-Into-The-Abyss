@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Altar of the Absolute Boundary
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'Altar of the Absolute Boundary '
+  Icon: {fileID: 0}
+  Description: "Located in the center of the\_Ido Front, the\_Altar of the Absolute
+    Boundary\_is an elevator-like connection between the\_5th\_layer\_and the\_6th\_layer. 
+    The Altar can only be activated if an owner of a personal\_Life Reverberating
+    Stone\_uses their stone while being inside it.  The capsule artifact, which serves
+    the elevator function for travel via the altar, consists out of a combination
+    of organic and inorganic elements.  Futhermore, while the entrance section is
+    able to be moved separately from the exterior of the capsule, the inside is constantly
+    level.  "
+  AdditionalInfo: 

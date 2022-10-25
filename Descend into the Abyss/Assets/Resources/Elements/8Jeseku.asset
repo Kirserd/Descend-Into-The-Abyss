@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Jeseku
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: Jeseku
+  Icon: {fileID: 0}
+  Description: "Jeseku, or\_Jisweku, is a remote western country outside of\_Orth. 
+    Marulk\_seemingly lived as part of the royalty in Jeseku before travelling to
+    the\_Abyss\_with his\_father.  Within the royal family of Jeseku, \"Children
+    of the Shadows,\" who are by nature sensitive to sunlight, are occasionally born. 
+    These \"Children of the Shadows\" are said to only live to the age of ten, and
+    even among the ancient texts of Jeseku it is written that \"Three thousand suns
+    will eliminate a child of the shadows.\u201D  To conceal these children from
+    the sun, long-established children's clothing, called the \"Moon Outfit,\" is
+    worn by them.  "
+  AdditionalInfo: 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: Nanachi
+  m_EditorClassIdentifier: 
+  Type: 1
+  Name: Nanachi
+  Icon: {fileID: 21300000, guid: 2bcc28d9433dd6144b1f5971a49d76f1, type: 3}
+  Description: Nanachi is a Narehate; a person who survived the 6th layer's Curse
+    of the Abyss and was left deformed as a result, but, unlike most other Narehate,
+    still retained a sound mind. Possessing vast knowledge of the Abyss - its ecosystem,
+    vegetation and even the use of the medicines, Nanachi is currently a part of
+    Riko's party, assisting her in reaching the bottom of the Abyss. Their gender
+    is ambiguous.
+  AdditionalInfo: Nanachi's appearance is very rabbit-like, save for a long sturdy
+    tail, horizontally slanted pupils, carnivorous teeth and human-like hair; which
+    is straight and cream-white in a short bobbed style, the sides of the bangs going
+    down to the shoulders. In contrast, medium tan fur covers the rest of Nanachi,
+    with light tan covering the insides of their ears and belly. They have a blush-like
+    spot on each cheek; which has two thick whiskers protruding sideways. Other animal
+    traits include a cat-like mouth with little fangs, yellow eyes with horizontal
+    oval shaped pupils (similar to a goat's) and erect bunny ears. Their fingers
+    are rather stubby though surprisingly agile, as they are very artistically skilled.

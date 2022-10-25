@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Ido Front
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: Ido Front
+  Icon: {fileID: 0}
+  Description: "Ido Front, also known as the\_Forward Operating Base, is a research
+    station located at the bottom of the\_5th\_layer. It is the deepest a person
+    can go and still survive the\_curse.\_It is the place where\_White Whistle Delvers\_begin
+    their Last Dive.  Its main purpose is as a gateway into the\_6th\_layer. Its
+    center, the\_Altar of the Absolute Boundary, acts as an elevator through the
+    Sea of Corpses, and it can only be activated by the sound of a\_White Whistle. "
+  AdditionalInfo: "Long ago, Ido Front was originally the ruins of a former ritual
+    site where preperations were made and the ritual was held.\_Since then, it has
+    been transformed into\_Bondrewd's\_main base of operations.\_Here he conducts
+    experiments in warding the curse.  It was here that Bondrewd brought\_Nanachi,\_Mitty\_and
+    other children to act as his test subjects, and where Nanachi and Mitty were
+    transformed into\_Narehate\_after ascending from the\_Miniature Garden of Dawn.\_It
+    is also the place where Bondrewd raised\_Prushka\_as his adopted daughter before
+    turning her into a cartridge.  "

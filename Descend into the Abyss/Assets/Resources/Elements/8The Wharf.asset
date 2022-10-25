@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8The Wharf
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: The Wharf
+  Icon: {fileID: 0}
+  Description: "The Wharf\_is a section of the South District of the City by the\_Abyss,\_Orth. 
+    It is a place built by illegal\_Delvers. Many illegal Delvers came here and settled,
+    adding more and more buildings near each other in such little space, causing
+    the area to protrude and gradually sink into the Abyss. According to\_Shiggy,
+    it is probably the deepest point of the city.  Nat\_was born and once lived in
+    the Wharf with his\_sister. He and his sister were forced to scavenge for food
+    here. When Nat's sister passed away, Nat, not having any other relatives, was
+    picked up by the\_Belchero Orphanage.  Nat later\_returns with Shiggy,\_Riko\_and\_Reg\_to
+    the Wharf, where the latter two begin\_their first and final true descent into
+    the Abyss.  "
+  AdditionalInfo: 

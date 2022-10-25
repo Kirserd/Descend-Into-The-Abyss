@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Belchero Orphanage
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'Belchero Orphanage  '
+  Icon: {fileID: 0}
+  Description: "Belchero Orphanage\_is an orphanage in\_Orth\_run by\_Belchero.\_It
+    comes complete with a school, where the children there learn to be\_Delvers.\_Red
+    Whistle Delvers from the orphanage often go searching for\_Artifacts\_in the\_1st\_layer\_to
+    sell overseas and help raise money for the orphanage.  This is where\_Riko\_spent
+    her childhood, along with\_Nat,\_Shiggy, and\_Kiyui.  "
+  AdditionalInfo: 

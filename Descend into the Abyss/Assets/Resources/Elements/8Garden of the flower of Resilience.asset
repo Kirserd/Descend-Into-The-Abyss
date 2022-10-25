@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54009d6c4b1cf746be9f0168c2823e5, type: 3}
+  m_Name: 8Garden of the flower of Resilience
+  m_EditorClassIdentifier: 
+  Type: 2
+  Name: 'Garden of the flower of Resilience '
+  Icon: {fileID: 0}
+  Description: "The\_Garden of the Flowers of Resilience\_is a field in the\_4th\_layer\_that
+    is filled with\_Eternal Fortunes.\_It is said by numerous\_Delvers\_that the
+    garden is one of the most beautiful places that can be found deep in the\_Abyss. 
+    Most of the Delvers, who come across it, rest here for a while just to look at
+    the beautiful scenery of the garden.\_It was one of\_Lyza's favored places in
+    the Abyss.  The garden was classified as especially dangerous, because of the
+    migration of the\_Amaranthine-Deceptor, due to them taking advantage of the cover
+    the\_flora\_provides and had to be destroyed. "
+  AdditionalInfo: "Ozen\_found the\_Everlasting Pickaxe\_marking a grave in the garden,
+    though it was later revealed that the grave was empty.\_The Everlasting Pickaxe
+    was given to\_Riko, as it had been her mother's signature weapon.  Later, after
+    leaving\_Nanachi's Hideout, Riko,\_Reg\_and\_Nanachi\_are travelling through
+    the garden, on the 4th\_layer, when they spot one of\_Bondrewd's\_Umbra Hands.\_When
+    Reg goes to go inspect what the Umbra Hand is doing, he is given back the Everlasting
+    Pickaxe, which had been lost ever since\_Orb Piercer\_had attacked Reg and Riko.\_As
+    Nanachi and Riko observe the situation, Riko notices a bug pretending to be one
+    of the Eternal Fortunes.[8]\_Reg finds out from the Umbra Hand that the entire
+    garden is infested with deadly Amaranthine-Deceptors.  Amaranthine-Deceptors
+    usually reside in the 6th\_layer, but for unknown reasons have begun to infest
+    the upper layers as well.\_The Umbra Hand infroms Reg the Amaranthine-Deceptors
+    have already increased their population too much in the garden and proceedes
+    to burn the whole garden, so that the Amaranthine-Deceptors will not spread any
+    further.  "
