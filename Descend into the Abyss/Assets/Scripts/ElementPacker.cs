@@ -22,6 +22,7 @@ public class ElementPacker : MonoBehaviour
         return _type.text switch
         {
             "Character" => DataType.CHARACTER,
+            "PlayableCharacter" => DataType.PLAYABLE_CHARACTER,
             "Location" => DataType.LOCATION,
             "Campaign" => DataType.CAMPAIGN,
             _ => DataType.ARTIFACT,
@@ -32,7 +33,7 @@ public class ElementPacker : MonoBehaviour
     {
         if (ElementValidate() == false)
             return;
-
+        
         DatabaseElement Element = new()
         {
             Name = _name.text,

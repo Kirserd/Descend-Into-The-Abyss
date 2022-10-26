@@ -3,11 +3,12 @@ using System.Collections.Generic;
 
 public class Database : MonoBehaviour
 {
-    public List<DatabaseElement> _artifacts { get; private set; } = new List<DatabaseElement>();
-    public List<DatabaseElement> _characters { get; private set; } = new List<DatabaseElement>();
-    public List<DatabaseElement> _locations { get; private set; } = new List<DatabaseElement>();
-    public List<DatabaseElement> _campaigns { get; private set; } = new List<DatabaseElement>();
-    public List<DatabaseElement> _music { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Artifacts { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Characters { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> CharacterSheet { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Locations { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Campaigns { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Music { get; private set; } = new List<DatabaseElement>();
     private void Awake() => InitiateElements();
     private void InitiateElements()
     {
@@ -22,19 +23,19 @@ public class Database : MonoBehaviour
             switch (Element.Type)
             {
                 case (DataType.ARTIFACT):
-                    _artifacts.Add(Element);
+                    Artifacts.Add(Element);
                     break;
                 case (DataType.CHARACTER):
-                    _characters.Add(Element);
+                    Characters.Add(Element);
                     break;
                 case (DataType.LOCATION):
-                    _locations.Add(Element);
+                    Locations.Add(Element);
                     break;
                 case (DataType.CAMPAIGN):
-                    _campaigns.Add(Element);
+                    Campaigns.Add(Element);
                     break;
                 case (DataType.MUSIC):
-                    _music.Add(Element);
+                    Music.Add(Element);
                     break;
             }
         }

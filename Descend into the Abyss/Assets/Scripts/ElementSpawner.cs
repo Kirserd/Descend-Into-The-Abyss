@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
-using UnityEngine.UI;
 
 public enum DataType
 {
@@ -9,12 +8,13 @@ public enum DataType
     CHARACTER,
     LOCATION,
     CAMPAIGN,
-    MUSIC
+    MUSIC,
+    PLAYABLE_CHARACTER
 }
 public class ElementSpawner : MonoBehaviour
 {
-    private int START_POSITION_Y = 0;
-    private int ELEMENT_SIZE_Y = 80;
+    private readonly int START_POSITION_Y = 0;
+    private readonly int ELEMENT_SIZE_Y = 80;
 
     [SerializeField] private Database _database;
     [SerializeField] private RectTransform _content;
@@ -25,28 +25,16 @@ public class ElementSpawner : MonoBehaviour
 
     private void SpawnElements(DataType DataType)
     {
-        List<DatabaseElement> Database = new List<DatabaseElement>();
-        switch (DataType)
+        _ = new List<DatabaseElement>();
+        List<DatabaseElement> Database = DataType switch
         {
-            case (DataType.ARTIFACT):
-                Database = _database._artifacts;
-                break;
-            case (DataType.CHARACTER):
-                Database = _database._characters;
-                break;
-            case (DataType.LOCATION):
-                Database = _database._locations;
-                break;
-            case (DataType.CAMPAIGN):
-                Database = _database._campaigns;
-                break;
-            case (DataType.MUSIC):
-                Database = _database._music;
-                break;
-            default:
-                Database = null;
-                break;
-        }
+            DataType.ARTIFACT => _database.Artifacts,
+            DataType.CHARACTER => _database.Characters,
+            DataType.LOCATION => _database.Locations,
+            DataType.CAMPAIGN => _database.Campaigns,
+            DataType.MUSIC => _database.Music,
+            _ => null,
+        };
         if (Database == null)
         {
             Debug.LogError("No database loaded");
