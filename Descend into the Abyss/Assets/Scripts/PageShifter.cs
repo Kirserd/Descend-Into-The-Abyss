@@ -40,7 +40,7 @@ public class PageShifter : MonoBehaviour
     }
     private IEnumerator ReferralLink()
     {
-        yield return new WaitForFixedUpdate();
+        yield return new WaitForSeconds(0.1f);
         string Link = GameObject.FindGameObjectWithTag("Foreground").GetComponent<ElementLink>().Link;
         if (GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType == DataType.PLAYABLE_CHARACTER)
             SceneManager.LoadScene("DatabaseSheet");
