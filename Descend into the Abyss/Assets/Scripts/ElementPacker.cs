@@ -13,6 +13,14 @@ public class ElementPacker : MonoBehaviour
     [SerializeField] private ImageLoader _imageLoader;
 
     private string _icon;
+
+    private string _startName, _startIcon;
+
+    private void Start()
+    {
+        _startName = _name.text;
+        _startIcon = _icon;
+    }
     public void SetIcon()
     {
         _imageLoader.LoadImagePath();
@@ -59,18 +67,16 @@ public class ElementPacker : MonoBehaviour
     }
     private bool ElementValidate()
     {
-        if (_name == null || _name.text.Length < 2)
-            return false;
-        if (_desc == null || _desc.text.Length < 2)
-            return false;
-        if (_info == null || _info.text.Length < 2)
+        if (_name == null || _name.text.Length < 2 || _name.text == _startName || _desc == null || _desc.text.Length < 2 || _info == null || _info.text.Length < 2 )
             return false;
 
         return true;
     }
     private bool IconValidate()
     {
-        return (_icon != null || _icon != "");
+        if (_icon == null || _icon == "" || _icon == _startIcon)
+            return false;
+        return true;
     }
     private void CreateNewDatabaseElement(DatabaseElement Element)
     {
@@ -86,7 +92,6 @@ public class ElementPacker : MonoBehaviour
                         + Element.Icon + "\n"
                         + Element.Description + "\n"
                         + Element.AdditionalInfo + "\n";
-        Debug.Log(content);
 
         if (File.Exists(path))
             return;
