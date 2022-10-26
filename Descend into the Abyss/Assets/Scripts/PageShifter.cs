@@ -29,6 +29,11 @@ public class PageShifter : MonoBehaviour
         SceneManager.LoadScene("DatabaseOverview");
         GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.MUSIC;
     }
+    public void GoToCharacterSheets()
+    {
+        SceneManager.LoadScene("DatabaseOverview");
+        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.PLAYABLE_CHARACTER;
+    }
     public void GoToDatabasePage()
     {
         StartCoroutine(ReferralLink());
@@ -36,8 +41,11 @@ public class PageShifter : MonoBehaviour
     private IEnumerator ReferralLink()
     {
         yield return new WaitForFixedUpdate();
-        DatabaseElement Link = GameObject.FindGameObjectWithTag("Foreground").GetComponent<ElementLink>().Link;
-        SceneManager.LoadScene("DatabasePage");
+        string Link = GameObject.FindGameObjectWithTag("Foreground").GetComponent<ElementLink>().Link;
+        if (GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType == DataType.PLAYABLE_CHARACTER)
+            SceneManager.LoadScene("DatabaseSheet");
+        else
+            SceneManager.LoadScene("DatabasePage");
         GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentElement = Link;
         yield break;
     }
@@ -52,6 +60,10 @@ public class PageShifter : MonoBehaviour
     public void GoToContentCreator()
     {
         SceneManager.LoadScene("ContentCreator");
+    }
+    public void GoToRegisterCharacter()
+    {
+        SceneManager.LoadScene("RegisterCharacter");
     }
     public void GoToMain()
     {

@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
-
+using System.IO;
 public enum DataType
 {
     ARTIFACT,
@@ -30,6 +30,7 @@ public class ElementSpawner : MonoBehaviour
         {
             DataType.ARTIFACT => _database.Artifacts,
             DataType.CHARACTER => _database.Characters,
+            DataType.PLAYABLE_CHARACTER => _database.PlayableCharacters,
             DataType.LOCATION => _database.Locations,
             DataType.CAMPAIGN => _database.Campaigns,
             DataType.MUSIC => _database.Music,
@@ -42,8 +43,26 @@ public class ElementSpawner : MonoBehaviour
         }
         RectTransform Rt = GetComponent<RectTransform>();
         Rt.sizeDelta = new Vector2(0, -(150 * Database.Count));
-        
-        foreach (var element in Database)
+
+        List<string> NDatabase = new List<string>();
+        for (int i = 0; i < Database.Count; i++)
+        {
+            NDatabase.Add(Database[i].Name);
+        }
+        string[] SDatabase = File.ReadAllLines(Application.dataPath + "/DatabaseElements/LoadedFiles.txt");
+        string[] SortedSDatabase = new string[Database.Count];
+
+        int k = 0;
+        foreach (var element in SDatabase)
+        {
+            string[] Name = File.ReadAllLines(element);
+            if (NDatabase.Contains(Name[0]))
+            {
+                SortedSDatabase[k] = element;
+                k++;
+            }
+        }
+        foreach (var element in SortedSDatabase)
         {
             GameObject ElementPrefab = null;
             GameObject[] Prefabs = Resources.LoadAll<GameObject>("Prefabs");
@@ -68,7 +87,8 @@ public class ElementSpawner : MonoBehaviour
             TextMeshProUGUI ElementText = ElementObject.GetComponentInChildren<TextMeshProUGUI>();
             _content.sizeDelta = new Vector2(_content.rect.width, -_currentPositionY + 80);
             _content.anchoredPosition = new Vector2(_content.anchoredPosition.x, 0);
-            ElementText.text = element.Name;
+            string[] Name = File.ReadAllLines(element);
+            ElementText.text = Name[0];
             _currentPositionY -= ELEMENT_SIZE_Y;
         }
     }

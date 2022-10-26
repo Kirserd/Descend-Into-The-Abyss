@@ -1,38 +1,54 @@
-using System.IO;
+using SFB;
+using UnityEngine.UI;
 using UnityEngine;
-using UnityEditor;
+using System.IO;
+using System.Collections;
 
-public class ImageLoader : EditorWindow
+[System.Obsolete]
+public class ImageLoader : MonoBehaviour
 {
-    public static string LoadImage()
+    private byte[] _textureBytes;
+    public string LoadImagePath()
     {
-        Texture2D texture = new(200,200,TextureFormat.ARGB32, false, true);
-        texture.alphaIsTransparency = true;
+        var extensions = new[] 
+        {
+            new ExtensionFilter("Image Files", "png", "jpg", "jpeg" ),
+            new ExtensionFilter("All Files", "*" ),
+        };
+        string ImagePath = null;
+        foreach (string path in StandaloneFileBrowser.OpenFilePanel("Open Image", "", extensions, true))
+            ImagePath = path;
 
-        string path = EditorUtility.OpenFilePanel("Choose image", "", "png");
-        
-        if (path.Length == 0)
-            return "";
+        StartCoroutine(EncodeTextureToPNG(ImagePath));
+        return ImagePath;
+    }
 
-        var fileContent = File.ReadAllBytes(path);
-        texture.LoadImage(fileContent);
+    public string PackImage(string ElementName)
+    {
+        if (File.Exists(Application.dataPath + "/DatabaseElements/" + ElementName + ".png") || _textureBytes == null )
+            return null;
 
-        string name = path[path.LastIndexOf('/')..];
-        texture.name = name[..name.LastIndexOf('.')];
-        texture.name.Replace(" ", "");
+        File.WriteAllBytes(Application.dataPath + "/DatabaseElements/" + ElementName + ".png", _textureBytes);
+        return Application.dataPath + "/DatabaseElements/" + ElementName + ".png";
+    }
+    
+    public void VisualizeImageOn(RawImage Image, string Path) => StartCoroutine(VisualizeImageRoutine(Image, Path));
+    
+    private IEnumerator VisualizeImageRoutine(RawImage Image, string Path)
+    {
+        var loader = new WWW(Path);
+        yield return loader;
+        Image.texture = loader.texture;
+    }
 
-        AssetDatabase.CreateAsset(texture, "Assets/Resources/Sprites/Loaded/" + texture.name + ".asset");
-        AssetDatabase.SaveAssets();
-        EditorUtility.FocusProjectWindow();
-        Selection.activeObject = texture;
+    private IEnumerator EncodeTextureToPNG(string Path)
+    {
+        if (Path == null || Path == "")
+            yield break;
 
-        Sprite sprite = Sprite.Create(texture, new Rect(Vector2.zero, new Vector2(texture.width, texture.height)), new Vector2(0.5f, 0.5f), 100);
-        AssetDatabase.CreateAsset(sprite, "Assets/Resources/Sprites/Loaded/" + "S" + texture.name + ".asset");
-        AssetDatabase.SaveAssets();
-        EditorUtility.FocusProjectWindow();
-        Selection.activeObject = sprite;
-
-        return "Assets/Resources/Sprites/Loaded/" + "S" + texture.name;
+        var loader = new WWW(Path);
+        yield return loader;
+        _textureBytes = loader.texture.EncodeToPNG();
     }
 }
 

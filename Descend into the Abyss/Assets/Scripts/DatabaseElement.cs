@@ -1,10 +1,8 @@
-using UnityEngine;
-[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/DatabaseElement", order = 1)]
-public class DatabaseElement : ScriptableObject
+public class DatabaseElement 
 {
     public DataType Type;
     public string Name;
-    public Sprite Icon;
+    public string Icon;
     public string Description;
     public string AdditionalInfo;
 }

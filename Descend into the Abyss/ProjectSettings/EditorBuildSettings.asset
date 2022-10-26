@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ContentCreator.unity
     guid: ed73b3cdedbda7342a3685bf76ba9637
+  - enabled: 1
+    path: Assets/Scenes/RegisterCharacter.unity
+    guid: 163b3ed4f65825b48b6aeba040cb0211
+  - enabled: 1
+    path: Assets/Scenes/DatabaseSheet.unity
+    guid: 712c4e6ebfe31054bb7f74260c132450
   m_configObjects: {}

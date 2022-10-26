@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.IO;
 
 public class Database : MonoBehaviour
 {
@@ -12,11 +13,31 @@ public class Database : MonoBehaviour
     private void Awake() => InitiateElements();
     private void InitiateElements()
     {
-        Object[] preDatabaseElements = Resources.LoadAll("Elements");
-        DatabaseElement[] databaseElements = new DatabaseElement[preDatabaseElements.Length];
-        for (int i = 0; i < preDatabaseElements.Length; ++i)
+        if (!File.Exists(Application.dataPath + "/DatabaseElements/LoadedFiles.txt"))
+            return;
+
+        string[] ElementPaths = File.ReadAllLines(Application.dataPath + "/DatabaseElements/LoadedFiles.txt");
+        DatabaseElement[] databaseElements = new DatabaseElement[ElementPaths.Length];
+        for (int i = 0; i < ElementPaths.Length; ++i)
         {
-            databaseElements[i] = (preDatabaseElements[i] as ScriptableObject) as DatabaseElement;
+            string[] ElementLines = File.ReadAllLines(ElementPaths[i]);
+            DataType ElementDataType = ElementLines[1] switch
+            {
+                "1" => DataType.CHARACTER,
+                "2" => DataType.LOCATION,
+                "3" => DataType.CAMPAIGN,
+                "4" => DataType.MUSIC,
+                "5" => DataType.PLAYABLE_CHARACTER,
+                _ => DataType.ARTIFACT,
+            };
+            databaseElements[i] = new DatabaseElement
+            {
+                Name = ElementLines[0],
+                Type = ElementDataType,
+                Icon = ElementLines[2],
+                Description = ElementLines[3],
+                AdditionalInfo = ElementLines[4]
+            };
         }
         foreach (var Element in databaseElements)
         {
