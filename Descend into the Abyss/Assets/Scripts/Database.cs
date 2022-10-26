@@ -5,7 +5,7 @@ public class Database : MonoBehaviour
 {
     public List<DatabaseElement> Artifacts { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Characters { get; private set; } = new List<DatabaseElement>();
-    public List<DatabaseElement> CharacterSheet { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> PlayableCharacters { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Locations { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Campaigns { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Music { get; private set; } = new List<DatabaseElement>();
@@ -27,6 +27,9 @@ public class Database : MonoBehaviour
                     break;
                 case (DataType.CHARACTER):
                     Characters.Add(Element);
+                    break;
+                case (DataType.PLAYABLE_CHARACTER):
+                    PlayableCharacters.Add(Element);
                     break;
                 case (DataType.LOCATION):
                     Locations.Add(Element);

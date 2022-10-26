@@ -9,12 +9,12 @@ public class ElementPacker : MonoBehaviour
     [SerializeField] private TextMeshProUGUI _name, _desc, _info, _type;
     [SerializeField] private Image _iconVisualizator;
     private Sprite _icon;
-    public void SetIcon(Sprite LoadedSprite)
+    public void SetIcon()
     {
-        if (LoadedSprite == null) 
-            return;
-        _icon = LoadedSprite;
-        _iconVisualizator.sprite = LoadedSprite;
+        string LoadedImagePath = ImageLoader.LoadImage();
+        Sprite LoadedTexture = Resources.Load<Sprite>(LoadedImagePath);
+        _icon = LoadedTexture;
+        _iconVisualizator.sprite = LoadedTexture;
     }
 
     private DataType GetDataType()
