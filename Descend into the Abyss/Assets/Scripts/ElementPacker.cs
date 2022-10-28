@@ -13,11 +13,12 @@ public class ElementPacker : MonoBehaviour
     [SerializeField] private ImageLoader _imageLoader;
 
     private string _icon;
-
+    private TextMeshProUGUI _notificatorText;
     private string _startName, _startIcon;
 
     private void Start()
     {
+        _notificatorText = _notificator.gameObject.transform.GetChild(0).GetComponent<TextMeshProUGUI>();
         _startName = _name.text;
         _startIcon = _icon;
     }
@@ -43,6 +44,9 @@ public class ElementPacker : MonoBehaviour
     {
         if (ElementValidate() == false)
         {
+            _notificatorText.text = "Fill in all the fields!" +
+                "\n" + "----------------------------------------------------------------------------------------------------------------" +
+                "\n" + "In the other case, you cannot add the element!";
             _notificator.SetTrigger("Error");
             return;
         }
@@ -51,6 +55,9 @@ public class ElementPacker : MonoBehaviour
 
         if (IconValidate() == false)
         {
+            _notificatorText.text = "Upload image!" +
+                "\n" + "----------------------------------------------------------------------------------------------------------------" +
+                "\n" + "In the other case, you cannot add the element!";
             _notificator.SetTrigger("Error");
             return;
         }
@@ -86,17 +93,26 @@ public class ElementPacker : MonoBehaviour
             Directory.CreateDirectory(path);
         }
         string allPath = path + "/LoadedFiles.txt";
+        string pathDesc = path + "/" + Element.Name.Replace(' ', '_') + "_desc.txt";
+        string pathInfo = path + "/" + Element.Name.Replace(' ', '_') + "_info.txt";
         path += "/" + Element.Name.Replace(' ', '_') + ".txt";
         string content = Element.Name + "\n"
                         + ((int)Element.Type).ToString() + "\n"
                         + Element.Icon + "\n"
-                        + Element.Description + "\n"
-                        + Element.AdditionalInfo + "\n";
+                        + pathDesc + "\n"
+                        + pathInfo + "\n";
 
         if (File.Exists(path))
+        {
+            _notificator.SetTrigger("Error");
+            _notificatorText.text = "File with this name already exists!" +
+                "\n" + "----------------------------------------------------------------------------------------------------------------" +
+                "\n" + "Please change file name.";
             return;
-
+        }
         File.WriteAllText(path, content);
+        File.WriteAllText(pathDesc, Element.Description);
+        File.WriteAllText(pathInfo, Element.AdditionalInfo);
 
         if (File.Exists(allPath))
             File.AppendAllText(allPath, path + "\n");
@@ -105,7 +121,7 @@ public class ElementPacker : MonoBehaviour
     }
     private IEnumerator TimerToReturn()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         GameObject.FindGameObjectWithTag("Content").GetComponent<PageShifter>().GoToMain();
     }
 }

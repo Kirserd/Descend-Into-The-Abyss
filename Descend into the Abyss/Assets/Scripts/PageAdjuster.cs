@@ -1,23 +1,22 @@
 using UnityEngine;
-using TMPro;
-
+using UnityEngine.UI;
 public class PageAdjuster : MonoBehaviour
 {
-    [SerializeField] RectTransform _descriptionBlock;
-    [SerializeField] RectTransform _additionalInfoBlock;
-
-    [SerializeField] TextMeshProUGUI _descriptionText;
-    [SerializeField] TextMeshProUGUI _additionalInfoText;
-
+    [SerializeField] RectTransform _descriptionBlock, _additionalInfoBlock, _descriptionText;
     [SerializeField] RectTransform _content;
+
+    [SerializeField] private float _scaler;
+
+    private void Update() => InitiateAdjustment();
 
     public void InitiateAdjustment()
     {
-        float DescriptionTextHeight = (_descriptionText.text.Length / 51.5f) * 40 + 10;
-        float PositionShift =  DescriptionTextHeight - 591;
+        _descriptionText.gameObject.GetComponent<ContentSizeFitter>().SetLayoutVertical();
+
+        float DescriptionTextHeight = _descriptionText.sizeDelta.y * _scaler;
+        float PositionShift =  DescriptionTextHeight - 810;
 
         _additionalInfoBlock.anchoredPosition = _descriptionBlock.anchoredPosition - new Vector2(0, PositionShift);
         _additionalInfoBlock.anchoredPosition = new Vector2(0, _additionalInfoBlock.anchoredPosition.y);
     }
-
 }

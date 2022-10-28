@@ -10,14 +10,11 @@ public class ImageLoader : MonoBehaviour
     private byte[] _textureBytes;
     public string LoadImagePath()
     {
-        var extensions = new[] 
-        {
-            new ExtensionFilter("Image Files", "png", "jpg", "jpeg" ),
-            new ExtensionFilter("All Files", "*" ),
-        };
-        string ImagePath = null;
-        foreach (string path in StandaloneFileBrowser.OpenFilePanel("Open Image", "", extensions, true))
-            ImagePath = path;
+        var extensions = new[] { new ExtensionFilter("Image Files", "png") };
+        string ImagePath = StandaloneFileBrowser.OpenFilePanel("Open Image", "", extensions, false)[0];
+
+        if(ImagePath == "")
+            return null;
 
         StartCoroutine(EncodeTextureToPNG(ImagePath));
         return ImagePath;

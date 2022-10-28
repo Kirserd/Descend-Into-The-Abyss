@@ -21,8 +21,8 @@ public class ElementUnpacker : MonoBehaviour
         string[] PackedElement = File.ReadAllLines(_packedElement);
         _name.text = PackedElement[0];
         _name2.text = PackedElement[0];
-        _description.text = PackedElement[3];
-        _additionalInfo.text = PackedElement[4];
+        _description.text = File.ReadAllText(PackedElement[3]);
+        _additionalInfo.text = File.ReadAllText(PackedElement[4]);
         _imageLoader.VisualizeImageOn( _image, PackedElement[2]);
         GetComponent<PageAdjuster>().InitiateAdjustment();
     }
