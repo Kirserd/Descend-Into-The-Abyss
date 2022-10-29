@@ -4,12 +4,14 @@ using System.IO;
 
 public class Database : MonoBehaviour
 {
+    public List<DatabaseElement> All { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Artifacts { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Characters { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> PlayableCharacters { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Locations { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Campaigns { get; private set; } = new List<DatabaseElement>();
     public List<DatabaseElement> Music { get; private set; } = new List<DatabaseElement>();
+    public List<DatabaseElement> Creatures{ get; private set; } = new List<DatabaseElement>();
     private void Awake() => InitiateElements();
     private void InitiateElements()
     {
@@ -28,6 +30,7 @@ public class Database : MonoBehaviour
                 "3" => DataType.CAMPAIGN,
                 "4" => DataType.MUSIC,
                 "5" => DataType.PLAYABLE_CHARACTER,
+                "6" => DataType.CREATURES,
                 _ => DataType.ARTIFACT,
             };
             databaseElements[i] = new DatabaseElement
@@ -41,6 +44,7 @@ public class Database : MonoBehaviour
         }
         foreach (var Element in databaseElements)
         {
+            All.Add(Element);
             switch (Element.Type)
             {
                 case (DataType.ARTIFACT):
@@ -60,6 +64,9 @@ public class Database : MonoBehaviour
                     break;
                 case (DataType.MUSIC):
                     Music.Add(Element);
+                    break;
+                case (DataType.CREATURES):
+                    Creatures.Add(Element);
                     break;
             }
         }

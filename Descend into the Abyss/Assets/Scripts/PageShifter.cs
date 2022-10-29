@@ -4,35 +4,9 @@ using System.Collections;
 
 public class PageShifter : MonoBehaviour
 {
-    public void GoToArtifacts()
-    {
-        SceneManager.LoadScene("DatabaseOverview", LoadSceneMode.Single);
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.ARTIFACT;
-    }
-    public void GoToCharacters()
+    public void GoToOverview()
     {
         SceneManager.LoadScene("DatabaseOverview");
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.CHARACTER;
-    }
-    public void GoToLocations()
-    {
-        SceneManager.LoadScene("DatabaseOverview");
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.LOCATION;
-    }
-    public void GoToCampaigns()
-    {
-        SceneManager.LoadScene("DatabaseOverview");
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.CAMPAIGN;
-    }
-    public void GoToMusicLibrary()
-    {
-        SceneManager.LoadScene("DatabaseOverview");
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.MUSIC;
-    }
-    public void GoToCharacterSheets()
-    {
-        SceneManager.LoadScene("DatabaseOverview");
-        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = DataType.PLAYABLE_CHARACTER;
     }
     public void GoToDatabasePage()
     {
@@ -48,10 +22,6 @@ public class PageShifter : MonoBehaviour
             SceneManager.LoadScene("DatabasePage");
         GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentElement = Link;
         yield break;
-    }
-    public void GoToDatabase()
-    {
-        SceneManager.LoadScene("DatabaseChoose");
     }
     public void GoToRules()
     {

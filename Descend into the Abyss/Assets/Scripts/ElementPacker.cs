@@ -36,6 +36,7 @@ public class ElementPacker : MonoBehaviour
             "PlayableCharacter" => DataType.PLAYABLE_CHARACTER,
             "Location" => DataType.LOCATION,
             "Campaign" => DataType.CAMPAIGN,
+            "Creature" => DataType.CREATURES,
             _ => DataType.ARTIFACT,
         };
     }
@@ -92,10 +93,11 @@ public class ElementPacker : MonoBehaviour
         {
             Directory.CreateDirectory(path);
         }
+        string ElementName = Element.Name.Replace(' ', '_').Replace('"', '_').Replace('.', '_');
         string allPath = path + "/LoadedFiles.txt";
-        string pathDesc = path + "/" + Element.Name.Replace(' ', '_') + "_desc.txt";
-        string pathInfo = path + "/" + Element.Name.Replace(' ', '_') + "_info.txt";
-        path += "/" + Element.Name.Replace(' ', '_') + ".txt";
+        string pathDesc = path + "/" + ElementName + "_desc.txt";
+        string pathInfo = path + "/" + ElementName + "_info.txt";
+        path += "/" + ElementName + ".txt";
         string content = Element.Name + "\n"
                         + ((int)Element.Type).ToString() + "\n"
                         + Element.Icon + "\n"

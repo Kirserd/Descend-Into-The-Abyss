@@ -4,36 +4,67 @@ using TMPro;
 using System.IO;
 public enum DataType
 {
-    ARTIFACT,
+    ALL = 100,
+    ARTIFACT = 0,
     CHARACTER,
     LOCATION,
     CAMPAIGN,
     MUSIC,
-    PLAYABLE_CHARACTER
+    PLAYABLE_CHARACTER,
+    CREATURES
 }
 public class ElementSpawner : MonoBehaviour
 {
     private readonly int START_POSITION_Y = 0;
     private readonly int ELEMENT_SIZE_Y = 80;
 
+    private DataType _dataType = DataType.ALL;
     [SerializeField] private Database _database;
     [SerializeField] private RectTransform _content;
+    [SerializeField] private TextMeshProUGUI _type;
 
     private int _currentPositionY;
     private void Awake() => _currentPositionY = START_POSITION_Y;
-    private void Start() => SpawnElements(GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType);
+    private void Start() => SpawnElements();
 
-    private void SpawnElements(DataType DataType)
+    public void SetDataSort()
+    {
+        _dataType = _type.text switch
+        {
+            "Character" => DataType.CHARACTER,
+            "PlayableCharacter" => DataType.PLAYABLE_CHARACTER,
+            "Location" => DataType.LOCATION,
+            "Campaign" => DataType.CAMPAIGN,
+            "Creature" => DataType.CREATURES,
+            "Without sorting" => DataType.ALL,
+            _ => DataType.ARTIFACT,
+        };
+
+        ResetElements();
+    }
+
+    private void ResetElements()
+    {
+        _currentPositionY = START_POSITION_Y;
+        foreach (Transform child in transform)
+            Destroy(child.gameObject);
+
+        SpawnElements();
+    }
+
+    private void SpawnElements()
     {
         _ = new List<DatabaseElement>();
-        List<DatabaseElement> Database = DataType switch
+        List<DatabaseElement> Database = _dataType switch
         {
+            DataType.ALL => _database.All,
             DataType.ARTIFACT => _database.Artifacts,
             DataType.CHARACTER => _database.Characters,
             DataType.PLAYABLE_CHARACTER => _database.PlayableCharacters,
             DataType.LOCATION => _database.Locations,
             DataType.CAMPAIGN => _database.Campaigns,
             DataType.MUSIC => _database.Music,
+            DataType.CREATURES => _database.Creatures,
             _ => null,
         };
         if (Database == null)
