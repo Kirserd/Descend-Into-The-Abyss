@@ -88,13 +88,13 @@ public class ElementPacker : MonoBehaviour
     }
     private void CreateNewDatabaseElement(DatabaseElement Element)
     {
-        string path = Application.dataPath + "/DatabaseElements";
+        string path = "/DatabaseElements";
         if (!Directory.Exists(path))
         {
             Directory.CreateDirectory(path);
         }
         string ElementName = Element.Name.Replace(' ', '_').Replace('"', '_').Replace('.', '_');
-        string allPath = path + "/LoadedFiles.txt";
+        string allPath = Application.dataPath + path + "/LoadedFiles.txt";
         string pathDesc = path + "/" + ElementName + "_desc.txt";
         string pathInfo = path + "/" + ElementName + "_info.txt";
         path += "/" + ElementName + ".txt";
@@ -112,9 +112,9 @@ public class ElementPacker : MonoBehaviour
                 "\n" + "Please change file name.";
             return;
         }
-        File.WriteAllText(path, content);
-        File.WriteAllText(pathDesc, Element.Description);
-        File.WriteAllText(pathInfo, Element.AdditionalInfo);
+        File.WriteAllText(Application.dataPath + path, content);
+        File.WriteAllText(Application.dataPath + pathDesc, Element.Description);
+        File.WriteAllText(Application.dataPath + pathInfo, Element.AdditionalInfo);
 
         if (File.Exists(allPath))
             File.AppendAllText(allPath, path + "\n");

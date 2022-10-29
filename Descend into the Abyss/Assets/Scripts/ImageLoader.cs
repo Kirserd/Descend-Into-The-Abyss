@@ -26,7 +26,7 @@ public class ImageLoader : MonoBehaviour
             return null;
 
         File.WriteAllBytes(Application.dataPath + "/DatabaseElements/" + ElementName + ".png", _textureBytes);
-        return Application.dataPath + "/DatabaseElements/" + ElementName + ".png";
+        return "/DatabaseElements/" + ElementName + ".png";
     }
     
     public void VisualizeImageOn(RawImage Image, string Path) => StartCoroutine(VisualizeImageRoutine(Image, Path));

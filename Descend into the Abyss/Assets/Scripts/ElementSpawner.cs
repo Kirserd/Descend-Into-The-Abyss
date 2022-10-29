@@ -86,10 +86,10 @@ public class ElementSpawner : MonoBehaviour
         int k = 0;
         foreach (var element in SDatabase)
         {
-            string[] Name = File.ReadAllLines(element);
+            string[] Name = File.ReadAllLines(Application.dataPath + element);
             if (NDatabase.Contains(Name[0]))
             {
-                SortedSDatabase[k] = element;
+                SortedSDatabase[k] = Application.dataPath + element;
                 k++;
             }
         }
@@ -104,11 +104,6 @@ public class ElementSpawner : MonoBehaviour
                     ElementPrefab = Prefab;
                     break;
                 }
-            }
-            if(ElementPrefab == null)
-            {
-                Debug.LogError("No prefab found");
-                return;
             }
             GameObject ElementObject = Instantiate(ElementPrefab);
             ElementObject.GetComponent<ElementLink>().SetLinkTo(element);

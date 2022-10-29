@@ -22,7 +22,7 @@ public class Database : MonoBehaviour
         DatabaseElement[] databaseElements = new DatabaseElement[ElementPaths.Length];
         for (int i = 0; i < ElementPaths.Length; ++i)
         {
-            string[] ElementLines = File.ReadAllLines(ElementPaths[i]);
+            string[] ElementLines = File.ReadAllLines(Application.dataPath + ElementPaths[i]);
             DataType ElementDataType = ElementLines[1] switch
             {
                 "1" => DataType.CHARACTER,
