@@ -39,4 +39,8 @@ public class PageShifter : MonoBehaviour
     {
         SceneManager.LoadScene("Main");
     }
+    public void GoToSession()
+    {
+        SceneManager.LoadScene("Session");
+    }
 }

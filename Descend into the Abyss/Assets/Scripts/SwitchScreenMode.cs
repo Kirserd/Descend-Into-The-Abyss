@@ -15,6 +15,6 @@ public class SwitchScreenMode : MonoBehaviour
             Screen.SetResolution(960, 540, FullScreenMode.Windowed);
 
         else
-            Screen.SetResolution(_resolutionX,_resolutionY, FullScreenMode.ExclusiveFullScreen);
+            Screen.SetResolution(_resolutionX,_resolutionY, FullScreenMode.FullScreenWindow);
     } 
 }
