@@ -18,13 +18,28 @@ public class ElementSpawner : MonoBehaviour
     private readonly int START_POSITION_Y = 0;
     private readonly int ELEMENT_SIZE_Y = 80;
 
-    private DataType _dataType = DataType.ALL;
+    private DataType _dataType;
     [SerializeField] private Database _database;
     [SerializeField] private RectTransform _content;
     [SerializeField] private TextMeshProUGUI _type;
-
+    [SerializeField] private TMP_Dropdown _dropType;
+        
     private int _currentPositionY;
-    private void Awake() => _currentPositionY = START_POSITION_Y;
+    private void Awake()
+    {
+        _dataType = GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType;
+        _dropType.value = _dataType switch
+        {
+            DataType.CHARACTER => 2,
+            DataType.PLAYABLE_CHARACTER => 0,
+            DataType.LOCATION => 3,
+            DataType.CAMPAIGN => 4,
+            DataType.CREATURES => 5,
+            DataType.ALL => 0,
+            _ => 1
+        };
+        _currentPositionY = START_POSITION_Y;
+    }
     private void Start() => SpawnElements();
 
     public void SetDataSort()
@@ -37,9 +52,10 @@ public class ElementSpawner : MonoBehaviour
             "Campaign" => DataType.CAMPAIGN,
             "Creature" => DataType.CREATURES,
             "Without sorting" => DataType.ALL,
-            _ => DataType.ARTIFACT,
+            _ => DataType.ARTIFACT
         };
 
+        GameObject.FindGameObjectWithTag("DontDestroyOnLoad").GetComponent<DataTransfer>().CurrentDataType = _dataType;
         ResetElements();
     }
 

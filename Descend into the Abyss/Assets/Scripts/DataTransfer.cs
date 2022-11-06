@@ -6,5 +6,9 @@ public class DataTransfer : MonoBehaviour
     public string CurrentElement;
     public string LoadedImagePath;
 
-    private void Awake() => DontDestroyOnLoad(gameObject);  
+    private void Awake() 
+    {
+        CurrentDataType = DataType.ALL;
+        DontDestroyOnLoad(gameObject);
+    }  
 }
